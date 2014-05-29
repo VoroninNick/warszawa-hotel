@@ -1,0 +1,42 @@
+<%= content_for :html_head do %>
+  <style type="text/css">
+    div.field {
+      margin: 10px 0;
+      font-size: 16px !important;
+      padding-bottom: 25px;
+    }
+    div.field div.label {
+      display: inline;
+      font-weight: bold;
+    }
+    div.field div.value {
+      display: inline;
+    }
+  </style>
+<% end %>
+
+<%= content_for :functions do %>
+  <%= link_to span_tag("List All"), email_messages_path, :class => "button" %>
+<% end %>
+
+<% @page_title = @toolbar_title = "Email Message '#{@message.subject}'" %>
+<div class="field">
+  <div class="label">Delivered At:</div> 
+  <div class="value"><%= time_on_date(@message.delivered_at) %></div>
+</div>
+<div class="field">
+  <div class="label">Name:</div> 
+  <div class="value"><%=h @message.user_name %></div>
+</div>
+<div class="field">
+  <div class="label">Phone:</div> 
+  <div class="value"><%=h @message.user_phone %></div>
+</div>
+<div class="field">
+  <div class="label">E-mail:</div> 
+  <div class="value"><a href="mailto: <%=h @message.user_mail %>" > <%=h @message.user_mail %> </a></div>
+</div>
+<div class="field">
+  <div class="label">Message:</div>
+  <%=h @message.user_msg %>
+</div>

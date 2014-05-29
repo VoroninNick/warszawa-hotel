@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  about_hotels: 
+  home_sliders: 
+  about_main_images: 
+  main_rooms: 
+
+two:
+  name: MyString
+  about_hotels: 
+  home_sliders: 
+  about_main_images: 
+  main_rooms: 

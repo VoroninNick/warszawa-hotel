@@ -1,0 +1,2 @@
+module Cms::VacanciesHelper
+end
