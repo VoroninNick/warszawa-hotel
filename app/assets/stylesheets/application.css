@@ -22,6 +22,10 @@ top: -467px !important;
 margin-top: 0 !important;
 }
 
+.fancybox-wrap{
+  overflow: visible !important;
+}
+
 .fancybox-iframe{
   width: 640px !important;
   height: 710px !important;
@@ -30,7 +34,7 @@ margin-top: 0 !important;
 }
 
 .fancybox-inner{
-  height: 710px !important;
+  /*height: 710px !important;*/
 }
 
 p.phone-number{
