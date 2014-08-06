@@ -43,3 +43,4 @@ gem "bcms_kcfinder"
 #gem "memcache-client"
 #gem "memcache"
 #gem "bcms_page_comments"
+gem 'http_accept_language'
